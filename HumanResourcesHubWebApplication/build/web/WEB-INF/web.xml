@@ -62,7 +62,7 @@
         </session-timeout>
     </session-config>
     <error-page>
-        <error-code>404</errpror-code>
+        <error-code>404</error-code>
         <location>/page_not_found.jsp</location>
     </error-page>
     <error-page>
