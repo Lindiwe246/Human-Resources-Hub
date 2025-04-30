@@ -12,7 +12,7 @@ import za.ac.tut.entities.Manager;
 
 /**
  *
- * @author Lindi
+ * @author Fortunate
  */
 @Stateless
 public class ManagerFacade extends AbstractFacade<Manager> implements ManagerFacadeLocal {

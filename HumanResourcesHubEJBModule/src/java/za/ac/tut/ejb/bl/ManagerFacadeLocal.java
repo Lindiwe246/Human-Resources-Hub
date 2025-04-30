@@ -11,7 +11,7 @@ import za.ac.tut.entities.Manager;
 
 /**
  *
- * @author Lindi
+ * @author Fortunate
  */
 @Local
 public interface ManagerFacadeLocal {

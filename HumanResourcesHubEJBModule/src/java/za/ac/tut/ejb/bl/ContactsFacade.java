@@ -12,7 +12,7 @@ import za.ac.tut.entities.Contacts;
 
 /**
  *
- * @author Lindi
+ * @author Fortunate
  */
 @Stateless
 public class ContactsFacade extends AbstractFacade<Contacts> implements ContactsFacadeLocal {

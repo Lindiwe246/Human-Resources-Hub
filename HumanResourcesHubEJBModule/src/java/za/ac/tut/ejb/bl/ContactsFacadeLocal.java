@@ -11,7 +11,7 @@ import za.ac.tut.entities.Contacts;
 
 /**
  *
- * @author Lindi
+ * @author Fortunate
  */
 @Local
 public interface ContactsFacadeLocal {

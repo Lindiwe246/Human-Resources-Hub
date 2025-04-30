@@ -27,23 +27,36 @@ public class Manager implements Serializable {
     @Id
     @Column(name="MANAGER_ID")
     private Long id;
+    
     @Column(name="EMAIL")
     private String email;
+    
     @Column(name="PASSWORD")
     private String password;
+    
+    private String fullNames;
+    
+    private String gender;
+    
+    private Integer age;
+    
     @Temporal(TemporalType.DATE)
     private Date creationDate;
 
     public Manager() {
     }
 
-    public Manager(Long id, String email, String password) {
+    public Manager(Long id, String email, String password, String fullNames, String gender, Integer age, Date creationDate) {
         this.id = id;
         this.email = email;
         this.password = password;
+        this.fullNames = fullNames;
+        this.gender = gender;
+        this.age = age;
         this.creationDate = new Date();
     }
 
+    
     public String getEmail() {
         return email;
     }

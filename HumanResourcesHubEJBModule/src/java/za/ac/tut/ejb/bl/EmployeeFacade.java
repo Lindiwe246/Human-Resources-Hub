@@ -12,7 +12,7 @@ import za.ac.tut.entities.Employee;
 
 /**
  *
- * @author Lindi
+ * @author Fortunate
  */
 @Stateless
 public class EmployeeFacade extends AbstractFacade<Employee> implements EmployeeFacadeLocal {

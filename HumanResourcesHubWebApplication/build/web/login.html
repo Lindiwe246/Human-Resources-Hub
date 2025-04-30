@@ -6,11 +6,31 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>LogIn Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div align="center">
+            <h1>Login Page</h1>
+            <form action="LoginServlet" method="POST">
+                <table>
+                    <tr>
+                        <td><input type="email" name="email" placeholder="Enter your email"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" placeholder="Enter your password"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="LOGIN"></td>
+                    </tr>
+                    
+                </table>
+            </form>
+            
+            <p>
+                Don't have an account    <a href="register.html">Register Now</a>
+            </p>
+        </div>
     </body>
 </html>

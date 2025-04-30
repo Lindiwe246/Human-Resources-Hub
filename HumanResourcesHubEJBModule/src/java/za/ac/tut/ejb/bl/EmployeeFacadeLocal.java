@@ -11,7 +11,7 @@ import za.ac.tut.entities.Employee;
 
 /**
  *
- * @author Lindi
+ * @author Fortunate
  */
 @Local
 public interface EmployeeFacadeLocal {
