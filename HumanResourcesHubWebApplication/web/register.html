@@ -206,22 +206,22 @@
             <p>Join our professional HR management system</p>
         </div>
         
-        <form class="registration-form" id="registrationForm">
+        <form action="RegisterServlet.do" class="registration-form" id="registrationForm" method="POST">
             <div class="form-group">
                 <label for="employeeId">Employee ID</label>
-                <input type="text" id="employeeId" name="employeeId" required placeholder="EMP-12345">
+                <input type="number" id="employeeId" name="employeeId" required placeholder="12345">
                 <div class="error-message" id="idError">Please enter a valid employee ID</div>
             </div>
             
             <div class="form-group">
                 <label for="fullName">Full Name</label>
-                <input type="text" id="fullName" name="fullName" required placeholder="John Doe">
+                <input type="text" id="fullName" name="fullName" required placeholder="Karabo Dlamini">
                 <div class="error-message" id="nameError">Please enter your full name</div>
             </div>
             
             <div class="form-group">
                 <label for="email">Work Email</label>
-                <input type="email" id="email" name="email" required placeholder="john.doe@company.com">
+                <input type="email" id="email" name="email" required placeholder="Karabo@company.com">
                 <div class="error-message" id="emailError">Please enter a valid email address</div>
             </div>
             
@@ -232,12 +232,6 @@
                     <div class="password-strength-bar" id="passwordStrength"></div>
                 </div>
                 <div class="error-message" id="passwordError">Password must be at least 8 characters</div>
-            </div>
-            
-            <div class="form-group">
-                <label for="confirmPassword">Confirm Password</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter your password">
-                <div class="error-message" id="confirmError">Passwords do not match</div>
             </div>
             
             <div class="form-group">
@@ -253,8 +247,7 @@
             
             <div class="form-group">
                 <label for="age">Age</label>
-                <input type="number" id="age" name="age" min="18" max="70" required placeholder="25">
-                <div class="error-message" id="ageError">Age must be between 18 and 70</div>
+                <input type="number" id="age" name="age"  required="" placeholder="25">
             </div>
             
             <div class="form-group">
@@ -302,40 +295,19 @@
                 document.getElementById('nameError').style.display = 'block';
                 isValid = false;
             }
-            
-            // Email validation
-            const email = document.getElementById('email').value;
-            if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-                document.getElementById('emailError').style.display = 'block';
-                isValid = false;
-            }
-            
+
             // Password validation
             const password = document.getElementById('password').value;
             if (!password || password.length < 8) {
                 document.getElementById('passwordError').style.display = 'block';
                 isValid = false;
             }
-            
-            // Confirm password validation
-            const confirmPassword = document.getElementById('confirmPassword').value;
-            if (password !== confirmPassword) {
-                document.getElementById('confirmError').style.display = 'block';
-                isValid = false;
-            }
-            
-            // Age validation
-            const age = document.getElementById('age').value;
-            if (!age || age < 18 || age > 70) {
-                document.getElementById('ageError').style.display = 'block';
-                isValid = false;
-            }
+
             
             // If form is valid, submit it
             if (isValid) {
-                // In a real application, you would send the data to the server here
                 alert('Registration successful! You will be redirected to the dashboard.');
-                // this.submit(); // Uncomment this to actually submit the form
+                this.submit();
             }
         });
 
