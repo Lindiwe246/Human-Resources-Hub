@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/view_all.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/src/java/za/ac/tut/web/CreateServlet.java</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/src/java/za/ac/tut/web/RegisterServlet.java</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/incorrect_login_credentials_error.jsp</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/login.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/register.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/delete.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/create.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/help.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/src/java/za/ac/tut/web/DeleteServlet.java</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/about.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/index.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/dashboard.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/user_not_found_error.jsp</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/src/java/za/ac/tut/web/ViewAllServlet.java</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/page_not_found.jsp</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/search.html</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/src/java/za/ac/tut/web/UpdateServlet.java</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/password_length_error.jsp</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/src/java/za/ac/tut/web/LoginServlet.java</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/src/java/za/ac/tut/web/SearchServlet.java</file>
+            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubWebApplication/web/update.html</file>
+        </group>
+    </open-files>
+</project-private>
