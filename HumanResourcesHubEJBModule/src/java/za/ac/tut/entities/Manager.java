@@ -65,6 +65,30 @@ public class Manager implements Serializable {
         this.email = email;
     }
 
+    public String getFullNames() {
+        return fullNames;
+    }
+
+    public void setFullNames(String fullNames) {
+        this.fullNames = fullNames;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
+
     public String getPassword() {
         return password;
     }
