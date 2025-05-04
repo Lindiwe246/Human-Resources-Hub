@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+/*document.addEventListener('DOMContentLoaded', function() {
     // Set user profile info (you can get this from your session)
     const manager = JSON.parse(sessionStorage.getItem('manager') || { 
         fullNames: 'Admin', 
@@ -94,4 +94,4 @@ document.addEventListener('DOMContentLoaded', function() {
             messageDiv.remove();
         }, 5000);
     }
-});
+*/
