@@ -111,6 +111,7 @@
                     <div class="success-message">${success}</div>
                 <% } %>
             </div>
+            <button type="submit" class="btn back_btn"><a href="update.html">Back</a></button>
         </main>
     </div>
 </body>

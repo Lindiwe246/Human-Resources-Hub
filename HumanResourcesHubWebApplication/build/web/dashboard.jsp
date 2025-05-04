@@ -64,6 +64,12 @@
                 <p class="card-description">Find employee records</p>
             </div>
             
+            <div class="dashboard-card" onclick="location.href='view_all.html'">
+                <div class="card-icon">##</div>
+                <h3 class="card-title">View All Employees</h3>
+                <p class="card-description">View all employees records</p>
+            </div>
+            
             <div class="dashboard-card" onclick="location.href='delete.html'">
                 <div class="card-icon">??</div>
                 <h3 class="card-title">Delete</h3>
