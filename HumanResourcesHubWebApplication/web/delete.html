@@ -6,11 +6,37 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Delete Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/delete.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="search-container">
+            <div class="stat-item">
+                <h1>Delete Employee</h1>
+            </div>
+            <div>
+            <form action="SearchServlet.do">
+                <table>
+                    <tr>
+                        <td>Enter ID of Employee</td>
+                        <td><input type="text" name="id" required=""/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="submit" value="DELETE"/></td>
+                    </tr>
+                </table>
+            </form>
+            </div>
+        </div>
     </body>
 </html>

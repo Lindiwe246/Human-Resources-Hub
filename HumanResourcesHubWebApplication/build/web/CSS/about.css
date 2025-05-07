@@ -1,0 +1,145 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 May 2025, 2:58:25 PM
+    Author     : mabhe
+*/
+:root {
+    --primary-color: #2c3e50; 
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --success-color: #27ae60;
+    --highlight-color: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*added*/
+    align-items: center;
+    text-align: center;    /*added*/
+    padding: 80px 20px 40px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+
+h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 2.8rem;
+    color: var(--light-color);
+    margin: 30px 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 2;
+}
+
+.navbar a {
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.content-container p {
+    background-color: var(--primary-color);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #dddddd;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .navbar {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+    }
+    
+    .navbar a {
+        padding: 8px 12px;
+        margin: 5px;
+        font-size: 0.9rem;
+    }
+    
+    .content-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .content-container {
+        padding: 25px 20px;
+    }
+    
+    .content-container p {
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+

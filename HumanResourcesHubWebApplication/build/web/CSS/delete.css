@@ -1,0 +1,181 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 May 2025, 3:00:22 PM
+    Author     : mabhe
+*/
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --success-color: #27ae60;
+    --highlight-color: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+}
+/* Navigation Bar */
+.navbar {
+     position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 2;
+}
+
+.navbar a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+.search-container {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item h1 {
+    font-size: 2.5rem;
+    color: var(--light-color);
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form table tr {
+    margin-bottom: 20px;
+    display: block;
+}
+
+form table td {
+    padding: 10px 0;
+    vertical-align: middle;
+}
+
+form table td:first-child {
+    color: var(--light-color);
+    font-weight: 500;
+    width: 200px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    color: var(--light-color);
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-container {
+        padding: 30px;
+    }
+    
+    .stat-item h1 {
+        font-size: 2rem;
+    }
+    
+    form table td:first-child {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container {
+        padding: 25px 20px;
+    }
+    
+    .stat-item h1 {
+        font-size: 1.8rem;
+    }
+    
+    form table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    
+    form table td:first-child {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+}
+

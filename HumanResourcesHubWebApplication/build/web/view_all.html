@@ -6,11 +6,25 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>View Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/view_all.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Click To View Employees</h1>
+        
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="view-container">
+            <form action="ViewAllServlet.do" method="POST">
+                <button type="submit">VIEW</button>
+            </form>
+        </div>
     </body>
 </html>
