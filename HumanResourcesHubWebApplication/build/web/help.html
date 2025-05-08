@@ -1,55 +1,36 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>
-            <p>
-            This is a website designed for Human Resource Managers  for the Employees. It has all the details of of the 
-            managers <br>
-            who exists in the site. If the manager enters the incorrect login details, he/she will be denied to login. <br> 
-            We have designed the system in such a way that only the managers with the correct login details, are 
-            allowed access. <br>
-            <br>
-            If there's a new manager in the system, he/she will be given an opportunity to register and become part of  
-            the web app. <br>
-            It is required and very much important that the managers never forget their login details and thus advised to 
-            write <br>
-            them down.
-            <br> 
-            After all the managers who exist in the system have logedIn, they are taken to the Dashboard. <br>
-            They will be warmly greeted and given the below options of what they'll like to do today. <br>
-            
-        </p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HR Help Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/help.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Help Page</h1>
+        <p>This platform is designed for Human Resource Managers to manage employee records securely and efficiently.</p>
+        <p>Managers must log in with verified credentials. Incorrect login attempts are denied. New managers can register and must safeguard their login details.</p>
+        <p>After login, managers access the dashboard with the following tools:</p>
         <ol>
-            <li><a href="about.html">About</a> page explains the history behind our web app.</li>
-            <li><a href="create.html">Add Employee</a> page allows the manager to persist new employees into the 
-                database.</li>
-            <li><a href="dashboard.html">Dashboard</a> page allows you to see all the options the manager wants to take 
-            in the website</li>
-            <li><a href="delete.html">Delete Employee</a> page removes the employees details in the database.</li>
-            <li><a href="help.html">Help !</a> is the page you have opened. It guides the user on how to use the web app 
-                and provides <br> additional explanation you some concepts. </li>
-            <li><a href="index.html">Home </a> page takes you to the welcome page </li>
-            <li><a href="login.html">LogIn </a> page allows the manager to log into the web app.</li>
-            <li><a href="register.html">Register</a> page allows new managers to register their information into the 
-                database.</li>
-            <li><a href="search.html">Search Employee</a> page allows the manager to search for a specific employees 
-                using the employee staff number.</li>
-            <li><a href="update.html">Update Employee</a> page updates the details of the employees.</li>
-            <li><a href="view_all.html">Read Employee</a> page views all the employees persisted into the database.</li>
+            <li><a href="about.html">About</a> – Overview and background of the web application.</li>
+            <li><a href="create.html">Add Employee</a> – Add new employee records.</li>
+            <li><a href="dashboard.html">Dashboard</a> – Access core HR tools.</li>
+            <li><a href="delete.html">Delete Employee</a> – Remove employees from the database.</li>
+            <li><a href="help.html">Help</a> – Guidance and support (this page).</li>
+            <li><a href="index.html">Home</a> – Return to the welcome page.</li>
+            <li><a href="login.html">Log In</a> – Access with manager credentials.</li>
+            <li><a href="register.html">Register</a> – Register new manager credentials.</li>
+            <li><a href="search.html">Search Employee</a> – Find employees using their staff number.</li>
+            <li><a href="update.html">Update Employee</a> – Edit employee information.</li>
+            <li><a href="view_all.html">Read Employee</a> – View all employees in the database.</li>
         </ol>
-        <p>
-            Each and every page functions fully. <br>    
-        </p>
-        </div>
-    </body>
+        <p>Each page is designed for full functionality and ease of use.</p>
+    </div>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()">Top ↑</button>
+    
+    <script src="help.js"></script>
+</body>
 </html>
