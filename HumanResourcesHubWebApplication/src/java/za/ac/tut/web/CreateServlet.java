@@ -44,6 +44,7 @@ public class CreateServlet extends HttpServlet {
             String creationDate = request.getParameter("creationDate");
             SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DD");
             Date date = sdf.parse("creationDate");
+
             
             Contacts mail = new Contacts(email);
             Contacts cont1 = new Contacts(contact1);

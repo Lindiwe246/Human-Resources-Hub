@@ -2,17 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/ejb/bl/ContactsFacade.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/ejb/bl/EmployeeFacadeLocal.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/ejb/bl/ManagerFacade.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/ejb/bl/EmployeeFacade.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/ejb/bl/AbstractFacade.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/entities/Manager.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/entities/Contacts.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/entities/Employee.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/ejb/bl/ManagerFacadeLocal.java</file>
-            <file>file:/C:/Users/Lindi/Documents/NetBeansProjects/HumanResourcesHubEJBModule/src/java/za/ac/tut/ejb/bl/ContactsFacadeLocal.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>

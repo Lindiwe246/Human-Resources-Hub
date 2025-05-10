@@ -1,0 +1,165 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 May 2025, 12:49:15 AM
+    Author     : mabhe
+*/
+
+/* styles.css */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --success-color: #27ae60;
+    --highlight-color: #3498db;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: 2;
+}
+
+.navbar a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--light-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--accent-color);
+}
+
+.delete-container {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    width: 100%;
+    margin: 80px auto 0;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.stat-item h1 {
+    font-size: 2.5rem;
+    color: var(--light-color);
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.outcome-message {
+    text-align: center;
+    padding: 20px;
+}
+
+.outcome-message p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: var(--light-color);
+}
+
+.success-text {
+    color: var(--success-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.back-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .delete-container {
+        padding: 30px;
+        margin-top: 70px;
+    }
+    
+    .stat-item h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 20px 15px;
+    }
+    
+    .navbar {
+        position: static;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .navbar a {
+        margin: 0 10px;
+    }
+    
+    .delete-container {
+        padding: 25px 20px;
+        margin-top: 20px;
+    }
+    
+    .stat-item h1 {
+        font-size: 1.8rem;
+    }
+    
+    .back-button {
+        padding: 10px 20px;
+    }
+}
