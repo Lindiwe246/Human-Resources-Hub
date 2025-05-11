@@ -3,53 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Employee</title>
+    <title>Find Employee</title>
     <link rel="stylesheet" href="CSS/update_employee.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <!-- Header (consistent with dashboard) -->
-        <header class="dashboard-header">
-            <div class="logo">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/>
-                </svg>
-                HR PRO
-            </div>
-            
-            <nav class="user-nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="help.html">Help</a>
-                <a href="contact.html">Contact</a>
-                <a href="index.html">Logout</a>
-                <div class="user-profile">
-                    <div class="user-avatar" id="userAvatar">S</div>
-                    <span id="usernameDisplay">Admin</span>
-                </div>
-            </nav>
-        </header>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            HR PRO
+        </div>
+    </header>
 
-        <!-- Main Content Area -->
-        <main class="content-wrapper">
-            <h1 class="page-title">Enter the Id of the employee below: </h1>
-            
-            <div class="card search-card">
-                <form action="FindEmployeeServlet" id="searchForm" method="POST">
-                    <div class="form-group">
-                        <label for="employeeId">Employee ID</label>
-                        <input type="text" id="employeeId" name="employeeId" placeholder="Enter employee ID" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Find Employee</button>
-                </form>
-                
-                <div id="messageContainer"></div>
-            </div>
-            <button type="submit" class="btn back_btn"><a href="dashboard.jsp">Back</a></button>
-            
-        </main>
+    <!-- Employee Search Form -->
+    <div class="form-container">
+        <h2>Find Employee</h2>
+        <form action="FindEmployeeServlet.do" method="POST">
+            <label for="empId">Employee ID:</label>
+            <input type="text" id="empId" name="empId" required>
+
+            <button type="submit">Find Employee</button>
+        </form>
     </div>
-
-
 </body>
 </html>

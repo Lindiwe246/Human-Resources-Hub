@@ -50,7 +50,7 @@ public class RegisterServlet extends HttpServlet {
 
             mfl.create(mgr);
          
-         RequestDispatcher rd = request.getRequestDispatcher("register_outcome.jsp");
+         RequestDispatcher rd = request.getRequestDispatcher("login.html");
          rd.forward(request, response);
          
     }
