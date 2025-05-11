@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package za.ac.tut.web;
 
 import java.io.IOException;
@@ -36,14 +32,14 @@ public class CreateServlet extends HttpServlet {
             Long empId = Long.parseLong(request.getParameter("empId"));
             String fullName = request.getParameter("fullName");
             String department = request.getParameter("department");
-            double salary = Double.parseDouble(request.getParameter("salary"));
+            Double salary = Double.parseDouble(request.getParameter("salary"));
             String position = request.getParameter("position");
             String email = request.getParameter("email");
             String contact1 = request.getParameter("contact1");
             String contact2 = request.getParameter("contact2");
             String creationDate = request.getParameter("creationDate");
-            SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-DD");
-            Date date = sdf.parse("creationDate");
+            SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");
+            Date date = sdf.parse(creationDate);
 
             
             Contacts mail = new Contacts(email);
