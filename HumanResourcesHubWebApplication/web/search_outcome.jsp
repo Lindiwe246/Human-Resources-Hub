@@ -24,10 +24,18 @@
             <div class="outcome-message">
                 <%
                     Long empId = (Long)request.getAttribute("empId");
+                    String message = "";
+                   if (empId == null) {
+                           message = "There's no employee with that id";
+                       } else {
+                           message = "The employee with ID: " + empId + " has been found";
+                       }
+                    
                 %>
                 <p>
-                    The employee with ID: <span class="highlight-text"><%=empId%></span> has been found
+                    <%=message%>
                 </p>
+                
                 <a href="dashboard.jsp" class="back-button">Back to Dashboard</a>
             </div>
         </div>

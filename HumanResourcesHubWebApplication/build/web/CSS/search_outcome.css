@@ -7,7 +7,7 @@ and open the template in the editor.
     Created on : 11 May 2025, 12:30:53 AM
     Author     : mabhe
 */
-/* styles.css */
+/* search_outcome.css */
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
@@ -79,7 +79,7 @@ body::before {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.stat-item h1 {
+.search-container .stat-item h1 {
     font-size: 2.5rem;
     color: var(--light-color);
     margin-bottom: 30px;
@@ -89,24 +89,24 @@ body::before {
 }
 
 /* Outcome Message */
-.outcome-message {
+.search-container .outcome-message {
     text-align: center;
     padding: 20px;
 }
 
-.outcome-message p {
+.search-container .outcome-message p {
     font-size: 1.2rem;
     margin-bottom: 25px;
     color: var(--light-color);
 }
 
-.highlight-text {
+.search-container .highlight-text {
     color: var(--highlight-color);
     font-weight: bold;
     font-size: 1.3rem;
 }
 
-.back-button {
+.search-container .back-button {
     display: inline-block;
     padding: 12px 30px;
     background-color: var(--primary-color);
@@ -120,7 +120,7 @@ body::before {
     font-size: 1rem;
 }
 
-.back-button:hover {
+.search-container .back-button:hover {
     background-color: var(--secondary-color);
     transform: translateY(-2px);
 }
@@ -132,11 +132,11 @@ body::before {
         margin-top: 70px;
     }
     
-    .stat-item h1 {
+    .search-container .stat-item h1 {
         font-size: 2rem;
     }
     
-    .outcome-message p {
+    .search-container .outcome-message p {
         font-size: 1.1rem;
     }
 }
@@ -154,6 +154,8 @@ body::before {
     
     .navbar a {
         margin: 0 10px;
+        display: inline-block;
+        margin-bottom: 10px;
     }
     
     .search-container {
@@ -161,11 +163,11 @@ body::before {
         margin-top: 20px;
     }
     
-    .stat-item h1 {
+    .search-container .stat-item h1 {
         font-size: 1.8rem;
     }
     
-    .back-button {
+    .search-container .back-button {
         padding: 10px 20px;
     }
 }

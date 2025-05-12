@@ -27,7 +27,13 @@ public class SearchServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Long empId = Long.parseLong(request.getParameter("empId"));
-        request.setAttribute("empId", empId);
+        
+        if(efl.find(empId) != null){
+            request.setAttribute("empId", empId);
+        } else {
+            request.setAttribute("empId", null);
+        }
+
         
         Employee employee = efl.find(empId);
         request.setAttribute("employee", employee);
