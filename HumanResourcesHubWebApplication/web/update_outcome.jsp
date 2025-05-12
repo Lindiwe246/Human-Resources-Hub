@@ -17,15 +17,14 @@
             </svg>
             HR PRO
         </div>
-        <nav class="user-nav">
+        <div class="navbar">
             <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="about.html">About us</a>
             <a href="help.html">Help</a>
             <a href="contact.html">Contact</a>
-            <a href="index.html">Logout</a>
             <a href="dashboard.jsp">Dashboard</a>
             <a href="LogoutServlet.do">Logout</a>
-        </nav>
+        </div>
     </header>
 
     <!-- Outcome Message Section -->

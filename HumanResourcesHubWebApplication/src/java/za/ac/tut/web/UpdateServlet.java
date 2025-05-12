@@ -1,4 +1,5 @@
 package za.ac.tut.web;
+
 import java.util.List;
 import javax.ejb.EJB;
 import javax.servlet.RequestDispatcher;
@@ -30,18 +31,23 @@ public class UpdateServlet extends HttpServlet {
         String contact2 = request.getParameter("contact2");
         String email = request.getParameter("email");
 
+        // Find the employee by ID
         Employee employee = employeeFacade.find(empId);
 
         if (employee != null) {
+            
             employee.setEmpFullname(fullName);
             employee.setSalary(salary);
             employee.setPosition(position);
             employee.setDepartment(department);
             
+            
             List<Contacts> empContacts = employee.getContacts();
 
+           
             employeeFacade.edit(employee);
 
+           
             request.setAttribute("fullName", fullName);
             request.setAttribute("empId", empId);
             request.setAttribute("position", position);
@@ -51,8 +57,12 @@ public class UpdateServlet extends HttpServlet {
             request.setAttribute("contact2", contact2);
             request.setAttribute("email", email);
 
+            
             RequestDispatcher dispatcher = request.getRequestDispatcher("update_outcome.jsp");
             dispatcher.forward(request, response);
+        } else {
+            
+            response.sendRedirect("user_not_found_error.jsp");
         }
     }
 }

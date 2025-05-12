@@ -25,7 +25,7 @@ public class FindEmployeeServlet extends HttpServlet {
 
         if (employee == null) {
             request.setAttribute("error", "Employee not found!");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("find_employee.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("user_not_found_error.jsp");
             dispatcher.forward(request, response);
         } else {
 

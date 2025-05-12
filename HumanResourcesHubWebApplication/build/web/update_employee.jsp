@@ -34,13 +34,13 @@
             <input type="text" id="department" name="department" value="${employee.department}" required />
 
             <label for="contact1">Contact 1:</label>
-            <input type="text" id="contact1" name="contact1" value="${employee.contacts[0].contacts}" />
+            <input type="text" id="contact1" name="contact1" value="${employee.contacts[2].contacts}" />
 
             <label for="contact2">Contact 2:</label>
             <input type="text" id="contact2" name="contact2" value="${employee.contacts[1].contacts}" />
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" value="${employee.contacts[2].contacts}" />
+            <input type="email" id="email" name="email" value="${employee.contacts[0].contacts}" />
 
             <button type="submit">Update Employee</button>
         </form>

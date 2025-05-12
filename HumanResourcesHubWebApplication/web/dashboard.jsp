@@ -86,21 +86,6 @@
                 <h2 class="profile-name"><%= manager.getFullNames() %></h2>
                 <p class="profile-role">HR Administrator</p>
                 <p class="profile-email"><%= manager.getEmail() %></p>
-                
-                <div class="profile-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">142</div>
-                        <div class="stat-label">Employees</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">8</div>
-                        <div class="stat-label">Departments</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24</div>
-                        <div class="stat-label">New Hires</div>
-                    </div>
-                </div>
             </div>
         </section>
     </div>

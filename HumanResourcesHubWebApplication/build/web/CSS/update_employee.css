@@ -28,6 +28,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    color: white; /* Make all text white */
 }
 
 body::before {
@@ -45,7 +46,7 @@ h1, h2 {
     position: relative;
     z-index: 1;
     font-size: 2.5rem;
-    color: var(--light-color);
+    color: white;
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -55,7 +56,7 @@ h1, h2 {
 header .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--light-color);
+    color: white; /* Change to white */
     position: relative;
     z-index: 1;
     margin-bottom: 30px;
@@ -69,11 +70,11 @@ header .logo {
 }
 
 .navbar a {
-    color: var(--light-color);
+    color: white; /* Make navbar links white */
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
-    font-weight: 500;
+    font-weight: 700;
     transition: all 0.3s ease;
     border-radius: 4px;
 }
@@ -100,7 +101,7 @@ header .logo {
     line-height: 1.8;
     text-align: center;
     margin-bottom: 20px;
-    color: #dddddd;
+    color: white; /* Make text white in content-container */
 }
 
 /* FORM STYLES */
@@ -112,7 +113,7 @@ form {
 }
 
 form label {
-    color: var(--light-color);
+    color: white; /* Make form label text white */
     font-weight: 600;
     margin-top: 10px;
 }
@@ -130,6 +131,7 @@ form input[type="email"] {
 form input:focus {
     outline: 2px solid var(--highlight-color);
 }
+
 .outcome-container {
     position: relative;
     z-index: 1;
@@ -144,22 +146,20 @@ form input:focus {
 
 .outcome-container h1 {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: white; /* Make outcome-container heading white */
     margin-bottom: 20px;
     text-align: center;
 }
 
 .outcome-container p {
     font-size: 1.1rem;
-    color: #333;
+    color: white; /* Make text white */
     margin: 10px 0;
 }
 
 .outcome-container strong {
-    color: var(--secondary-color);
+    color: white; /* Make strong text white */
 }
-
-
 
 button[type="submit"] {
     margin-top: 20px;
@@ -167,7 +167,7 @@ button[type="submit"] {
     border: none;
     border-radius: 6px;
     background-color: var(--success-color);
-    color: #fff;
+    color: white; /* Make button text white */
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
