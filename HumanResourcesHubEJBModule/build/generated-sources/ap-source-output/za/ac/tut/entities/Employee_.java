@@ -7,7 +7,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 import za.ac.tut.entities.Contacts;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2025-05-12T02:00:44")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2025-05-12T02:10:50")
 @StaticMetamodel(Employee.class)
 public class Employee_ { 
 

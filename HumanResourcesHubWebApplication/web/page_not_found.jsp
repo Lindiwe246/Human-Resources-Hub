@@ -1,8 +1,3 @@
-<%-- 
-    Document   : page_not_found
-    Created on : Apr 30, 2025, 1:55:10 PM
-    Author     : Lindi
---%>
 
 <%@page isErrorPage="true" contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

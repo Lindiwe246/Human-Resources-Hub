@@ -1,8 +1,3 @@
-<%-- 
-    Document   : register_outcome
-    Created on : May 3, 2025, 2:32:09 AM
-    Author     : Lindi
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

@@ -1,8 +1,3 @@
-<%-- 
-    Document   : view_outcome
-    Created on : 10 May 2025, 4:11:53 PM
-    Author     : mabhe
---%>
 
 <%@page import="za.ac.tut.entities.Contacts"%>
 <%@page import="za.ac.tut.entities.Employee"%>

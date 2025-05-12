@@ -1,13 +1,3 @@
-<%-- 
-    Document   : search_outcome
-    Created on : 10 May 2025, 11:50:22 PM
-    Author     : mabhe
---%>
-<%-- 
-    Document   : search_outcome
-    Created on : 10 May 2025, 11:50:22 PM
-    Author     : mabhe
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

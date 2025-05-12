@@ -1,8 +1,4 @@
-<%-- 
-    Document   : delete_outcome
-    Created on : 10 May 2025, 5:20:15 PM
-    Author     : mabhe
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

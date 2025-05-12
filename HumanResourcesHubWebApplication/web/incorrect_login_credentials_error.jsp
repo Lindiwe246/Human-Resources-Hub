@@ -1,8 +1,3 @@
-<%-- 
-    Document   : incorrect_login_credentials_error
-    Created on : Apr 30, 2025, 1:59:31 PM
-    Author     : Lindi
---%>
 
 <%@page isErrorPage="true" contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
