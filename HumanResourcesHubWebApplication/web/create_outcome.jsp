@@ -13,6 +13,7 @@
         <a href="about.html">About us</a>
         <a href="help.html">Help</a>
         <a href="contact.html">Contact</a>
+        <a href="LogoutServlet.do">Logout</a>
         </div>
         <h1>Create Outcome</h1>
         <h5>The employee was successfully persisted in the database.</h5>

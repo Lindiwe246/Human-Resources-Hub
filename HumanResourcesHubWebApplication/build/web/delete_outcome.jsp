@@ -19,6 +19,7 @@
             <a href="help.html">Help</a>
             <a href="contact.html">Contact</a>
             <a href="dashboard.jsp">Dashboard</a>
+            <a href="LogoutServlet.do">Logout</a>
         </div>
         
         <div class="delete-container">

@@ -30,7 +30,7 @@
                 <a href="about.html">About Us</a>
                 <a href="help.html">Help</a>
                 <a href="contact.html">Contact</a>
-                <a href="index.html">Logout</a>
+                <a href="LogoutServlet.do">Logout</a>
                 <div class="user-profile">
                     <div class="user-avatar"><%= manager.getFullNames().charAt(0) %></div>
                     <span><%= manager.getFullNames() %></span>
