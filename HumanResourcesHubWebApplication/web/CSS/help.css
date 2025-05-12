@@ -30,7 +30,7 @@
             max-width: 800px;
             margin: 60px auto;
             padding: 40px;
-            background-color: #2d3748; /* deeper navy blue */
+            background-color: #2d3748; 
             border-radius: 10px;
             box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
             transition: transform 0.3s ease;
@@ -74,7 +74,7 @@
         }
 
         a {
-            color: #63b3ed; /* light blue */
+            color: #63b3ed; 
             text-decoration: none;
             font-weight: bold;
         }
@@ -84,7 +84,6 @@
             text-decoration: underline;
         }
 
-        /* Scroll to Top Button */
         #scrollTopBtn {
             position: fixed;
             bottom: 20px;

@@ -12,12 +12,12 @@ import javax.servlet.http.HttpSession;
 import za.ac.tut.ejb.bl.ManagerFacadeLocal;
 import za.ac.tut.entities.Manager;
 
-
 @WebServlet(name = "LoginServlet", urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends HttpServlet {
     
     @EJB
     private ManagerFacadeLocal mfl;
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -25,22 +25,25 @@ public class LoginServlet extends HttpServlet {
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        // Input validation
+        
         if (email == null || email.isEmpty() || password == null || password.isEmpty()) {
             request.setAttribute("error", "Email and password are required");
             request.getRequestDispatcher("index.jsp").forward(request, response);
             return;
         }
         
+  
         Manager mgr = mfl.findByEmail(email);
 
+      
         if (mgr != null && password.equals(mgr.getPassword())) {
             HttpSession session = request.getSession();
             session.setAttribute("manager", mgr);
-            response.sendRedirect("dashboard.jsp");
+            response.sendRedirect("dashboard.jsp"); 
         } else {
+        
             request.setAttribute("error", "Invalid email or password");
-            request.getRequestDispatcher("index.jsp").forward(request, response);
+            response.sendRedirect("incorrect_login_credentials_error.jsp"); 
         }
     }
 }

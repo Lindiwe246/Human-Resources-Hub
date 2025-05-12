@@ -28,7 +28,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    color: white; /* Make all text white */
+    color: white; 
 }
 
 body::before {
@@ -56,7 +56,7 @@ h1, h2 {
 header .logo {
     font-size: 2rem;
     font-weight: bold;
-    color: white; /* Change to white */
+    color: white; 
     position: relative;
     z-index: 1;
     margin-bottom: 30px;
@@ -70,7 +70,7 @@ header .logo {
 }
 
 .navbar a {
-    color: white; /* Make navbar links white */
+    color: white; 
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
@@ -101,10 +101,10 @@ header .logo {
     line-height: 1.8;
     text-align: center;
     margin-bottom: 20px;
-    color: white; /* Make text white in content-container */
+    color: white; 
 }
 
-/* FORM STYLES */
+
 form {
     display: flex;
     flex-direction: column;
@@ -113,7 +113,7 @@ form {
 }
 
 form label {
-    color: white; /* Make form label text white */
+    color: white; 
     font-weight: 600;
     margin-top: 10px;
 }
@@ -146,19 +146,19 @@ form input:focus {
 
 .outcome-container h1 {
     font-size: 2rem;
-    color: white; /* Make outcome-container heading white */
+    color: white; 
     margin-bottom: 20px;
     text-align: center;
 }
 
 .outcome-container p {
     font-size: 1.1rem;
-    color: white; /* Make text white */
+    color: white; 
     margin: 10px 0;
 }
 
 .outcome-container strong {
-    color: white; /* Make strong text white */
+    color: white; 
 }
 
 button[type="submit"] {
@@ -167,7 +167,7 @@ button[type="submit"] {
     border: none;
     border-radius: 6px;
     background-color: var(--success-color);
-    color: white; /* Make button text white */
+    color: white; 
     font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -177,7 +177,7 @@ button[type="submit"]:hover {
     background-color: var(--highlight-color);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     h1, h2 {
         font-size: 2rem;

@@ -1,66 +1,68 @@
-
-<html>
-    <head>
-        <title>Create Employee Page</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>
-            <h1>Add Employee To The DataBase</h1> 
-            <div class="navbar">
-                <a href="index.html">Home</a>
-                <a href="about.html">About us</a>
-                <a href="help.html">Help</a>
-                <a href="contact.html">Contact</a>
-                <a href="dashboard.jsp">Dashboard</a>
-                <a href="LogoutServlet.do">Logout</a>
-            </div>
-            <form action="CreateServlet.do" method="POST">
-                <table>
-                    <tr>
-                        <th>Id: </th>
-                        <td><input type="number" name="empId" required=""></td>
-                    </tr>
-                    <tr>
-                        <th>Full Name: </th>
-                        <td><input type="text" name="fullName" required=""></td>
-                    </tr>
-                    <tr>
-                        <th>Department: </th>
-                        <td><input type="text" name="department" required=""></td>
-                    </tr>
-                    <tr>
-                        <th>Salary: </th>
-                        <td><input type="number" name="salary" required=""></td>
-                    </tr>
-                    <tr>
-                        <th>Position: </th>
-                        <td><input type="text" name="position" required=""></td>
-                    </tr>
-                    <tr>
-                        <th>Email: </th>
-                        <td><input type="text" name="email" required=""></td>
-                    </tr>
-                    <tr>
-                        <th>Contact 1: </th>
-                        <td><input type="number" name="contact1" required=""></td>
-                    </tr>
-                    <tr>
-                        <th>Contact 2: </th>
-                        <td><input type="number" name="contact2" required=""></td>
-                    </tr>
-                    <tr>
-                        <th>Creation Date: </th>
-                        <td><input type="date" name="creationDate" required=""></td>
-                    </tr>
-                     <tr>
-                        <th></th>
-                        <td><input type="submit" value="ADD EMPLOYEE"></td>
-                    </tr>
-                </table>
-            </form>
-        </div> 
-
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Employee Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/create_employee.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Add Employee To The Database</h1>
+        
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="help.html">Help</a>
+            <a href="contact.html">Contact</a>
+            <a href="dashboard.jsp">Dashboard</a>
+            <a href="LogoutServlet.do">Logout</a>
+        </div>
+        
+        <form action="CreateServlet.do" method="POST">
+            <table>
+                <tr>
+                    <th>Id: </th>
+                    <td><input type="number" name="empId" required></td>
+                </tr>
+                <tr>
+                    <th>Full Name: </th>
+                    <td><input type="text" name="fullName" required></td>
+                </tr>
+                <tr>
+                    <th>Department: </th>
+                    <td><input type="text" name="department" required></td>
+                </tr>
+                <tr>
+                    <th>Salary: </th>
+                    <td><input type="number" name="salary" required></td>
+                </tr>
+                <tr>
+                    <th>Position: </th>
+                    <td><input type="text" name="position" required></td>
+                </tr>
+                <tr>
+                    <th>Email: </th>
+                    <td><input type="text" name="email" required></td>
+                </tr>
+                <tr>
+                    <th>Contact 1: </th>
+                    <td><input type="number" name="contact1" required></td>
+                </tr>
+                <tr>
+                    <th>Contact 2: </th>
+                    <td><input type="number" name="contact2" required></td>
+                </tr>
+                <tr>
+                    <th>Creation Date: </th>
+                    <td><input type="date" name="creationDate" required></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="ADD EMPLOYEE"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
 </html>

@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="CSS/update_employee.css">
 </head>
 <body>
-    <!-- Header Section -->
+
     <header>
         <div class="logo">
             HR PRO
         </div>
     </header>
 
-    <!-- Employee Edit Form -->
+
     <div class="form-container">
         <h2>Edit Employee Details</h2>
         <form action="UpdateServlet" method="POST">

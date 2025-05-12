@@ -1,12 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 07 May 2025, 2:59:18 PM
-    Author     : mabhe
-*/
+
 :root {
     --primary-color: #2c3e50; 
     --secondary-color: #34495e;
@@ -23,7 +15,7 @@ and open the template in the editor.
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* General Styles */
+
 body {
      background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
     background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
@@ -35,7 +27,6 @@ body {
     background-color: #f8f9fa;
 }
 
-/* Navigation Bar */
 .navbar {
      position: absolute;
     top: 20px;
@@ -55,7 +46,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Header Section */
+
 h1 {
     color: #2c3e50;
     text-align: center;
@@ -65,7 +56,7 @@ h1 {
     padding-bottom: 10px;
 }
 
-/* Contact Introduction */
+
 .intro {
     text-align: center;
     margin-bottom: 40px;
@@ -73,7 +64,6 @@ h1 {
     color: white;
 }
 
-/* Contact Cards Container */
 .contact-container {
     display: flex;
     flex-wrap: wrap;
@@ -81,7 +71,6 @@ h1 {
     gap: 30px;
 }
 
-/* Contact Card Styles */
 .contact-card {
     background: white;
     border-radius: 8px;
@@ -120,7 +109,7 @@ h1 {
 }
 
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;

@@ -1,13 +1,4 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 11 May 2025, 12:30:53 AM
-    Author     : mabhe
-*/
-/* search_outcome.css */
+
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
@@ -44,7 +35,7 @@ body::before {
     z-index: 0;
 }
 
-/* Navigation Bar */
+
 .navbar {
     position: absolute;
     top: 20px;
@@ -64,7 +55,7 @@ body::before {
     color: var(--accent-color);
 }
 
-/* Search Container */
+
 .search-container {
     position: relative;
     z-index: 1;
@@ -88,7 +79,7 @@ body::before {
     letter-spacing: 1px;
 }
 
-/* Outcome Message */
+
 .search-container .outcome-message {
     text-align: center;
     padding: 20px;
@@ -125,7 +116,7 @@ body::before {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .search-container {
         padding: 30px;

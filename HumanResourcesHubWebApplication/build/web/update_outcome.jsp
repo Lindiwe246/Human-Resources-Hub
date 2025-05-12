@@ -27,7 +27,7 @@
         </div>
     </header>
 
-    <!-- Outcome Message Section -->
+ 
     <div class="outcome-container">
         <h1>Employee Update Successful</h1>
         <p>The information for employee <strong>${fullName}</strong> has been successfully updated.</p>

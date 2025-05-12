@@ -31,7 +31,7 @@ public class UpdateServlet extends HttpServlet {
         String contact2 = request.getParameter("contact2");
         String email = request.getParameter("email");
 
-        // Find the employee by ID
+
         Employee employee = employeeFacade.find(empId);
 
         if (employee != null) {

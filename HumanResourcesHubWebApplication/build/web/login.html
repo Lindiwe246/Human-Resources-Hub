@@ -1,31 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/login.css"> <!-- Link to the separate CSS file -->
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Register</a>
+    </div>
 
-<html>
-    <head>
-        <title>LogIn Page</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div align="center">
-            <h1>Login Page</h1>
-            <form action="LoginServlet.do" method="POST">
-                <table>
-                    <tr>
-                        <td><input type="email" name="email" placeholder="Enter your email"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="password" name="password" placeholder="Enter your password"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" value="LOGIN"></td>
-                    </tr>
-                    
-                </table>
-            </form>
-            
-            <p>
-                Don't have an account    <a href="register.html">Register Now</a>
-            </p>
-        </div>
-    </body>
+    <div class="hero-container">
+        <h1>Login</h1>
+        <h3>Welcome back!</h3>
+        <form action="LoginServlet.do" method="POST">
+            <table>
+                <tr>
+                    <td>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center">
+                        <button type="submit">LOGIN</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p>
+            Don't have an account? <a href="register.html">Register Now</a>
+        </p>
+    </div>
+</body>
 </html>

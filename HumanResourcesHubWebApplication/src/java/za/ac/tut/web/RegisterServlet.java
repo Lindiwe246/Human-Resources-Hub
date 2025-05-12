@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package za.ac.tut.web;
 
 import java.io.IOException;
@@ -18,10 +14,6 @@ import za.ac.tut.ejb.bl.ManagerFacadeLocal;
 import za.ac.tut.entities.Manager;
 
 
-/**
- *
- * @author Lindi
- */
 public class RegisterServlet extends HttpServlet {
     
     @EJB
@@ -38,7 +30,7 @@ public class RegisterServlet extends HttpServlet {
          Integer age = Integer.parseInt(request.getParameter("age"));
          Date creationDate = new Date();
          
-            // Create manager with all fields
+  
             Manager mgr = new Manager();
             mgr.setId(employeeId);
             mgr.setFullNames(fullnames);

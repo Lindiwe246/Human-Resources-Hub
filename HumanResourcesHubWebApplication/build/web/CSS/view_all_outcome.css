@@ -1,4 +1,4 @@
-/* Employee View Stylesheet */
+
 :root {
     --primary-color: #2c3e50;
     --secondary-color: #34495e;
@@ -48,7 +48,7 @@ body.employee-view-page::before {
     padding: 30px;
 }
 
-/* Navigation Bar */
+
 .employee-navbar {
     position: absolute;
     top: 20px;
@@ -127,7 +127,7 @@ body.employee-view-page::before {
     transform: translateY(-2px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .employee-view-container {
         padding: 20px;
