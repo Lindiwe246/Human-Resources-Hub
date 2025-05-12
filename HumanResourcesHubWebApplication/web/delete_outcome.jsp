@@ -8,6 +8,16 @@
         <title>Delete Outcome Page</title>
         <link rel="stylesheet" href="CSS/delete_outcome.css">
     </head>
+    <%
+        Long empId = (Long)request.getAttribute("empId");
+        String message;
+        if (empId != null){
+            message = " The employee was successfully deleted.";
+        }
+        else{
+            message = "Sorry! there's no employee with that ID.";
+        }
+    %>
     <body>
         <div class="navbar">
             <a href="index.html">Home</a>
@@ -24,7 +34,7 @@
             </div>
             <div class="outcome-message">
                 <p>
-                    The employee was <span class="success-text">successfully</span> deleted.
+                    <%=message%>
                 </p>
                 <a href="dashboard.jsp">Back to Dashboard</a>
             </div>

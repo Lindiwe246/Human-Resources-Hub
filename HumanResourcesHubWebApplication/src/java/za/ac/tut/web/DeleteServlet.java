@@ -27,7 +27,12 @@ public class DeleteServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         Long empId = Long.parseLong(request.getParameter("empId"));
-        request.setAttribute("empId", empId);
+        
+        if (efl.find(empId) != null) {
+            request.setAttribute("empId", empId);
+        } else {
+            request.setAttribute("empId", null);
+        }
         
         Employee employee = createEmployee(empId);
         efl.remove(employee);
